@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">RoomBuddy</string>
+    <string name="room_intro_message">Find rooms you will love &amp; roommates like you</string>
+    <string name="login_signup_message">Login or Sign up to continue</string>
+    <string name="login">Login</string>
+    <string name="signup">Sign Up</string>
+    <string name="email">Email</string>
+    <string name="enter_password">Enter password</string>
+    <string name="confirmPassword">Confirm password</string>
+    <string name="profile">Profile</string>
+    <string name="post">Post</string>
+    <string name="home">Home</string>
+    <string name="messages">Messages</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="share">Share to friends</string>
+    <string name="rate_us">Rate us</string>
+    <string name="terms">Terms and Condition</string>
+    <string name="privacy">Privacy Policy</string>
+    <string name="history">HISTORY</string>
+    <string name="slogan_name">…Roommates you\'ll love</string>
+    <string name="menu_setting">SETTING</string>
+    <string name="menu_contact">CONTACT ADMIN</string>
+    <string name="menu_logout">LOGOUT</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="loading">Please wait Loading…</string>
+    <string name="fullname">Full name</string>
+    <string name="phone_no">Phone number</string>
+    <string name="delete">Delete</string>
+
+
+</resources>

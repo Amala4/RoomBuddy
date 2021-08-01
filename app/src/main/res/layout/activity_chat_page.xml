@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".general.ChatPage">
+
+
+    <RelativeLayout
+        android:id="@id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorPrimary"
+        android:paddingStart="2dp"
+        android:paddingLeft="2dp"
+        android:paddingTop="4dp"
+        android:paddingEnd="2dp"
+        android:paddingRight="2dp"
+        android:paddingBottom="4dp"
+        app:layout_collapseMode="pin">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/chat_page_buddy_picture"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/profile_picture" />
+
+
+        <TextView
+            android:id="@+id/chat_page_buddy_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/chat_page_buddy_picture"
+            android:layout_toRightOf="@id/chat_page_buddy_picture"
+            android:fontFamily="@font/balootoobold"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/chatPage_inputMessageLayout"
+        android:layout_below="@id/header">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/chatPage_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/chatPage_inputMessageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/chatPage_inputMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="2"
+            android:background="@drawable/edit_text_border"
+            android:gravity="top|start"
+            android:hint="Type a message"
+            android:inputType="text"
+            android:paddingStart="20dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp" />
+
+
+        <ImageView
+            android:id="@+id/chatPage_sendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginBottom="5dp"
+            android:paddingStart="5dp"
+            android:paddingLeft="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_send_black_24dp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

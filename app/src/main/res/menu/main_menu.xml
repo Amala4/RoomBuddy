@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/nav_history"
+        android:icon="@drawable/menu_history_icon"
+        android:title="@string/history" />
+
+
+    <item
+        android:id="@+id/nav_setting"
+        android:icon="@drawable/settings_icon"
+        android:title="@string/menu_setting" />
+
+    <item
+        android:id="@+id/nav_contact_admin"
+        android:icon="@drawable/menu_contact_icon"
+        android:title="@string/menu_contact" />
+
+
+    <item android:title="Share">
+        <menu>
+
+            <group android:checkableBehavior="none">
+
+                <item
+                    android:id="@+id/nav_rate_us"
+                    android:icon="@drawable/rate_us_icon"
+                    android:title="@string/rate_us" />
+
+                <item
+                    android:id="@+id/nav_share"
+                    android:icon="@drawable/share_icon"
+                    android:title="@string/share" />
+
+
+            </group>
+
+        </menu>
+
+    </item>
+
+    <item android:title="Legal">
+        <menu>
+
+            <group android:checkableBehavior="none">
+
+                <item
+                    android:id="@+id/nav_terms_and_conditions"
+                    android:icon="@drawable/terms_icon"
+                    android:title="@string/terms" />
+
+                <item
+                    android:id="@+id/nav_privacy_policy"
+                    android:icon="@drawable/privacy_icon"
+                    android:title="@string/privacy" />
+
+
+            </group>
+
+        </menu>
+
+    </item>
+
+    <item
+        android:id="@+id/nav_all_logout"
+        android:icon="@drawable/logout_icon"
+        android:title="@string/menu_logout" />
+
+</menu>

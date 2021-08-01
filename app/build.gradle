@@ -1,0 +1,69 @@
+plugins {
+    id 'com.android.application'
+}
+
+apply plugin: 'realm-android'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.personalproject.roombuddy"
+        minSdkVersion 16
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    
+}
+
+realm {
+    syncEnabled = true
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.navigation:navigation-runtime:2.3.5'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'com.hbb20:ccp:2.3.1'
+    implementation 'androidx.browser:browser:1.3.0'
+    implementation "androidx.activity:activity:1.2.3"
+    implementation 'com.ss.bannerslider:bannerslider:2.0.0'
+    implementation 'org.jetbrains:annotations:16.0.2'
+    implementation 'com.scaledrone:scaledrone-java:0.6.0'
+
+
+
+
+
+
+    // Cloudinary
+    implementation 'com.cloudinary:cloudinary-android:1.28.2'
+
+    // Picasso image loader
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    // Circle image view for profile picture
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+}

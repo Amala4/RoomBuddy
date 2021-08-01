@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.personalproject.roombuddy">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RoomBuddy">
+        <activity android:name=".general.ContactAdmin"></activity>
+        <activity android:name=".general.FullPic" />
+        <activity android:name=".general.ChatPage" />
+        <activity android:name=".general.ProfileEdit" />
+        <activity android:name=".general.OwnProfile" />
+        <activity android:name=".general.EditRoom" />
+        <activity android:name=".general.PosterProfile" />
+        <activity android:name=".general.History" />
+        <activity android:name=".general.RoomDetails" />
+        <activity android:name=".general.Homescreen" />
+        <activity android:name=".general.SignUpPage" />
+        <activity android:name=".general.LoginPage" />
+        <activity android:name=".general.WelcomePage" />
+        <activity android:name=".general.Splash_Screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

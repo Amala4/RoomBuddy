@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".general.ProfileEdit">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/profile_edit_name_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="15dp"
+            android:paddingLeft="15dp"
+            android:paddingEnd="15dp"
+            android:paddingRight="15dp">
+
+
+            <TextView
+                android:id="@+id/profile_edit_name_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/profile_edit_full_name"
+                android:paddingEnd="15dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="8dp"
+                android:text="Name"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/profile_edit_full_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/profile_edit_name_title"
+                android:layout_toRightOf="@id/profile_edit_name_title"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/profile_edit_number_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_edit_name_layout"
+            android:layout_marginTop="20dp"
+            android:paddingStart="15dp"
+            android:paddingLeft="15dp"
+            android:paddingEnd="15dp"
+            android:paddingRight="15dp">
+
+
+            <TextView
+                android:id="@+id/profile_edit_phone_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/profile_edit_phone_number"
+                android:paddingEnd="12dp"
+                android:paddingRight="12dp"
+                android:paddingBottom="8dp"
+                android:text="Phone"
+                android:textSize="17sp" />
+
+
+            <EditText
+                android:id="@+id/profile_edit_phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/profile_edit_phone_title"
+                android:layout_toRightOf="@id/profile_edit_phone_title"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/profile_edit_cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_below="@id/profile_edit_number_layout"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/red"
+            android:onClick="cancel"
+            android:paddingStart="20dp"
+            android:paddingLeft="20dp"
+            android:paddingEnd="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/cancel"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/profile_edit_save_button"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_below="@id/profile_edit_number_layout"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/green"
+            android:onClick="save"
+            android:paddingStart="20dp"
+            android:paddingLeft="20dp"
+            android:paddingEnd="20dp"
+            android:paddingRight="20dp"
+            android:text="SAVE"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

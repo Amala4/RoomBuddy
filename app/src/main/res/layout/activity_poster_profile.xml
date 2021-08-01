@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    tools:context=".general.PosterProfile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:paddingStart="2dp"
+            android:paddingLeft="2dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="2dp"
+            android:paddingRight="2dp"
+            android:paddingBottom="4dp"
+            app:layout_collapseMode="pin">
+
+            <ImageView
+                android:id="@+id/menu_icon"
+                android:layout_width="57dp"
+                android:layout_height="45dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="40dp"
+                android:layout_marginRight="40dp"
+                android:src="@drawable/menu_icon" />
+
+            <TextView
+                android:id="@+id/app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/menu_icon"
+                android:layout_toRightOf="@+id/menu_icon"
+                android:fontFamily="@font/balootoobold"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/poster_profile_image"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50dp"
+                    android:src="@drawable/profile_picture" />
+
+                <TextView
+                    android:id="@+id/poster_profile_verified_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/poster_profile_image"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="10dp"
+                    android:text="Verified" />
+
+                <TextView
+                    android:id="@+id/poster_profile_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/poster_profile_verified_text"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/balootoobold"
+                    android:text="(M)"
+                    android:textColor="@color/red"
+                    android:textSize="17sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/poster_profile_gender"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/round_corner_colour_green"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:paddingTop="2dp"
+                        android:src="@drawable/profile_chat_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/balootoobold"
+                        android:text="MESSAGE USER"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/poster_profile_progress_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/poster_profile_gender"
+                    android:layout_centerHorizontal="true">
+
+                    <ProgressBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:minWidth="50dp"
+                        android:minHeight="50dp" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:paddingStart="15dp"
+                android:paddingLeft="15dp"
+                android:paddingEnd="15dp"
+                android:paddingRight="15dp">
+
+                <ImageView
+                    android:id="@+id/profile_blue_icon"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="35dp"
+                    android:layout_marginRight="35dp"
+                    android:src="@drawable/blue_profile_icon" />
+
+                <TextView
+                    android:id="@+id/profile_name_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@id/profile_blue_icon"
+                    android:layout_toRightOf="@id/profile_blue_icon"
+                    android:text="Name"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/poster_profile_full_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/profile_name_title"
+                    android:layout_toEndOf="@id/profile_blue_icon"
+                    android:layout_toRightOf="@id/profile_blue_icon"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#808080" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingStart="15dp"
+                android:paddingLeft="15dp"
+                android:paddingEnd="15dp"
+                android:paddingRight="15dp">
+
+                <ImageView
+                    android:id="@+id/profile_email_blue_icon"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="35dp"
+                    android:layout_marginRight="35dp"
+                    android:src="@drawable/blue_email_icon" />
+
+                <TextView
+                    android:id="@+id/profile_email_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@id/profile_email_blue_icon"
+                    android:layout_toRightOf="@id/profile_email_blue_icon"
+                    android:text="Email"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/poster_profile_email_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/profile_email_title"
+                    android:layout_toEndOf="@id/profile_email_blue_icon"
+                    android:layout_toRightOf="@id/profile_email_blue_icon"
+                    android:textColor="@color/black"
+                    android:textIsSelectable="true"
+                    android:textSize="17sp" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#808080" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingStart="15dp"
+                android:paddingLeft="15dp"
+                android:paddingEnd="15dp"
+                android:paddingRight="15dp">
+
+                <ImageView
+                    android:id="@+id/profile_phone_blue_icon"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="35dp"
+                    android:layout_marginRight="35dp"
+                    android:src="@drawable/blue_call_icon" />
+
+                <TextView
+                    android:id="@+id/profile_phone_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@id/profile_phone_blue_icon"
+                    android:layout_toRightOf="@id/profile_phone_blue_icon"
+                    android:text="Phone"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/poster_profile_phone_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/profile_phone_title"
+                    android:layout_toEndOf="@id/profile_phone_blue_icon"
+                    android:layout_toRightOf="@id/profile_phone_blue_icon"
+                    android:textColor="@color/black"
+                    android:textIsSelectable="true"
+                    android:textSize="17sp" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#808080" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingStart="15dp"
+                android:paddingLeft="15dp"
+                android:paddingEnd="15dp"
+                android:paddingRight="15dp">
+
+                <ImageView
+                    android:id="@+id/profile_location_blue_icon"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="35dp"
+                    android:layout_marginRight="35dp"
+                    android:src="@drawable/blue_location_icon" />
+
+                <TextView
+                    android:id="@+id/profile_state_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@id/profile_location_blue_icon"
+                    android:layout_toRightOf="@id/profile_location_blue_icon"
+                    android:text="State"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/poster_profile_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/profile_state_title"
+                    android:layout_toEndOf="@id/profile_location_blue_icon"
+                    android:layout_toRightOf="@id/profile_location_blue_icon"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#808080" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingStart="15dp"
+                android:paddingLeft="15dp"
+                android:paddingEnd="15dp"
+                android:paddingRight="15dp">
+
+                <ImageView
+                    android:id="@+id/profile_campus_blue_icon"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="35dp"
+                    android:layout_marginRight="35dp"
+                    android:src="@drawable/blue_education_icon" />
+
+                <TextView
+                    android:id="@+id/profile_campus_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@id/profile_campus_blue_icon"
+                    android:layout_toRightOf="@id/profile_campus_blue_icon"
+                    android:text="Campus"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/poster_profile_campus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/profile_campus_title"
+                    android:layout_toEndOf="@id/profile_campus_blue_icon"
+                    android:layout_toRightOf="@id/profile_campus_blue_icon"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#808080" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <LinearLayout
+                    android:id="@+id/profile_registration_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="35dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/grey_clock_icon" />
+
+
+                    <TextView
+                        android:id="@+id/poster_profile_registration_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Member since Sat, Aug 17, '19"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/profile_history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/profile_registration_layout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/balootoobold"
+                    android:text="History"
+                    android:textColor="@color/red"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="140dp"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/profile_registration_layout"
+                    android:layout_alignTop="@id/profile_history"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toStartOf="@id/profile_history"
+                    android:layout_toLeftOf="@id/profile_history"
+                    android:background="#808080" />
+
+                <View
+                    android:layout_width="140dp"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/profile_registration_layout"
+                    android:layout_alignTop="@id/profile_history"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toEndOf="@id/profile_history"
+                    android:layout_toRightOf="@id/profile_history"
+                    android:background="#808080" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/poster_profile_recyclerViewRooms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="8dp"
+            android:background="#808080" />
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

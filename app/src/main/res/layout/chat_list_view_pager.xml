@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="75dp">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/chat_list_view_pager_picture_thumbnail"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/profile_picture" />
+
+
+    <TextView
+        android:id="@+id/chat_list_view_pager_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/chat_list_view_pager_picture_thumbnail"
+        android:layout_toRightOf="@id/chat_list_view_pager_picture_thumbnail"
+        android:fontFamily="@font/balootoobold"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+
+    <TextView
+        android:id="@+id/chat_list_view_pager_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chat_list_view_pager_name"
+        android:layout_toEndOf="@id/chat_list_view_pager_picture_thumbnail"
+        android:layout_toRightOf="@id/chat_list_view_pager_picture_thumbnail"
+        android:ellipsize="end"
+        android:fontFamily="@font/balootoosemibold"
+        android:maxLines="2"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#808080" />
+
+</RelativeLayout>

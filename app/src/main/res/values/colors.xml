@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="black">#000</color>
+    <color name="light_black">#4d4d4d</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#0000e6</color>
+    <color name="colorPrimaryDark">#0000b3</color>
+    <color name="colorPrimaryLight">#9999ff</color>
+    <color name="colorAccent">#272727</color>
+    <color name="lightWhite">#e9e9f7</color>
+    <color name="transparent">#00000000</color>
+    <color name="profile_text_colour">#0903B4</color>
+    <color name="grey">#737373</color>
+    <color name="green">#25D366</color>
+    <color name="twitter_blue">#1DA1F2</color>
+    <color name="facebook_blue">#4267B2</color>
+    <color name="red">#ff0066</color>
+
+
+    <!--       Dashboard Colours       -->
+
+    <!-- Body and Background Colours -->
+
+    <!-- Card Colours -->
+</resources>

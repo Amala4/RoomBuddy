@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="2dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/imageViewCard"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            app:cardCornerRadius="6dp">
+
+            <ImageView
+                android:id="@+id/imageViewRoomThumb"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/round_corner_transparent"
+                android:scaleType="fitXY" />
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@id/imageViewCard"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@id/imageViewCard"
+            android:layout_toRightOf="@id/imageViewCard">
+
+            <ImageView
+                android:id="@+id/locationIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:paddingTop="2dp"
+                android:src="@drawable/location_icon" />
+
+            <TextView
+                android:id="@+id/textViewState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/locationIcon"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toEndOf="@id/locationIcon"
+                android:layout_toRightOf="@id/locationIcon"
+                android:gravity="center"
+                android:lines="1"
+                android:textAllCaps="true"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/light_black"
+                android:textIsSelectable="true"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/campusIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/locationIcon"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/campus_icon" />
+
+            <TextView
+                android:id="@+id/textViewCampus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewState"
+                android:layout_alignTop="@id/campusIcon"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="3dp"
+                android:layout_toEndOf="@id/campusIcon"
+                android:layout_toRightOf="@id/campusIcon"
+                android:lines="1"
+                android:textAllCaps="true"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/light_black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textViewlookingfor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/campusIcon"
+                android:layout_marginTop="18dp"
+                android:fontFamily="@font/brandonmediumitalic"
+                android:lines="1"
+                android:text="Looking for:"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textViewRoommateGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewlookingfor"
+                android:paddingStart="15dp"
+                android:paddingLeft="15dp"
+                android:text="female roommate"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textSize="15sp" />
+
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/delete_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_below="@id/imageViewCard"
+            android:layout_alignStart="@id/imageViewCard"
+            android:layout_alignLeft="@id/imageViewCard"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/round_corner_colour_red"
+            android:paddingStart="20dp"
+            android:paddingLeft="20dp"
+            android:paddingEnd="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/delete"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/edit_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_below="@id/imageViewCard"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="23dp"
+            android:layout_marginRight="23dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/round_corner_colour_green"
+            android:paddingStart="20dp"
+            android:paddingLeft="20dp"
+            android:paddingEnd="20dp"
+            android:paddingRight="20dp"
+            android:text="Edit Post"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
